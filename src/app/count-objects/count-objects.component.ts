@@ -39,7 +39,7 @@ export class CountObjectsComponent implements OnInit {
     this.choices=this.getRandomChoices(this.numberOfObjects);
     for (let i = 0; i < this.numberOfObjects; i++) {
       let randomObject:picture = {        
-        imageUrl: "../../assets/objects/jug.png",
+        imageUrl: "assets/objects/jug.png",
         name: "object" + (i + 1)            
       };
       this.objects.push(randomObject);
