@@ -1,9 +1,24 @@
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<nav>
+ <div class="toolbar" role="banner">
   <img width="40" alt="Maths Logo" src="assets/mathslogo.jpg" />
-  <span>Play & Learn</span>
+  <a class="navlink" routerLink="/">Play & Learn</a>
   <div class="spacer"></div>
+  <!-- <a class ="nav-link dropdown-toggle sidemenu" href="#" >Skills</a> -->
+  <div class="dropdown show">
+    <a class="dropdown-toggle sidemenu navlink" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Skills
+    </a>
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" routerLink="gradekg">Kindergarten</a>
+      <a class="dropdown-item" routerLink="grade1">Grade 1</a>
+      <a class="dropdown-item" routerLink="grade2">Grade 2</a>
+    </div>
+  </div>
 </div>
+</nav>
+
 <div class="content" role="main">
  
 <router-outlet></router-outlet>

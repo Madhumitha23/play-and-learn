@@ -37,8 +37,20 @@ p {
     font-weight: 600;
 }
 
+
 .toolbar img {
     margin: 0 16px;
+}
+
+.toolbar .sidemenu{
+  margin: 0 16px;
+  color: white;
+    text-decoration: none;
+}  
+
+.navlink{
+  color: white;
+    text-decoration: none;
 }
 
 .overlay {
@@ -73,3 +85,10 @@ p {
   .blurred {
     filter: blur(4px);
   }
+
+  .dropdown-menu{
+    position:absolute;
+    top: 10px;
+    left: -90px;
+  }
+  
