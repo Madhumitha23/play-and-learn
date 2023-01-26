@@ -14,6 +14,11 @@ import { SkillComponent } from './skill/skill.component';
 import { GradekgHomeComponent } from './gradekg-home/gradekg-home.component';
 import { Grade1HomeComponent } from './grade1-home/grade1-home.component';
 import { CountObjectsComponent } from './count-objects/count-objects.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { PaymentTermsComponent } from './payment-terms/payment-terms.component';
+import { OnlineSafetyComponent } from './online-safety/online-safety.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { CountObjectsComponent } from './count-objects/count-objects.component';
     SkillComponent,
     GradekgHomeComponent,
     Grade1HomeComponent,
-    CountObjectsComponent
+    CountObjectsComponent,
+    AboutUsComponent,
+    PrivacyComponent,
+    PaymentTermsComponent,
+    OnlineSafetyComponent,
+    TermsOfServiceComponent
   ],
   imports: [
     BrowserModule,
