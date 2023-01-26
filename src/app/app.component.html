@@ -1,25 +1,74 @@
 <!-- Toolbar -->
 <nav>
- <div class="toolbar" role="banner">
-  <img width="40" alt="Maths Logo" src="assets/mathslogo.jpg" />
-  <a class="navlink" routerLink="/">Play & Learn</a>
-  <div class="spacer"></div>
-  <!-- <a class ="nav-link dropdown-toggle sidemenu" href="#" >Skills</a> -->
-  <div class="dropdown show">
-    <a class="dropdown-toggle sidemenu navlink" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Skills
-    </a>
-  
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item" routerLink="gradekg">Kindergarten</a>
-      <a class="dropdown-item" routerLink="grade1">Grade 1</a>
-      <a class="dropdown-item" routerLink="grade2">Grade 2</a>
+  <div class="toolbar" role="banner">
+    <img width="40" alt="Maths Logo" src="assets/mathslogo.jpg" />
+    <a class="navlink" routerLink="/">Play & Learn</a>
+    <div class="spacer"></div>
+    <!-- <a class ="nav-link dropdown-toggle sidemenu" href="#" >Skills</a> -->
+    <div class="dropdown show">
+      <a class="dropdown-toggle sidemenu navlink" href="#" role="button" data-target="#dropdownMenuSkillsLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Skills
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuSkills1Link">
+        <a class="dropdown-item" routerLink="gradekg">Kindergarten</a>
+        <a class="dropdown-item" routerLink="grade1">Grade 1</a>
+        <a class="dropdown-item" routerLink="grade2">Grade 2</a>
+      </div>
+      </div>
+      <div class="dropdown show">
+      <a class="dropdown-toggle sidemenu navlink" href="#" role="button" data-target="#dropdownMenuGamesLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Games
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuGamesLink">
+        <a class="dropdown-item" routerLink="gradekg">8 mo to 3 years</a>
+        <a class="dropdown-item" routerLink="grade1">Kindergarten</a>
+        <a class="dropdown-item" routerLink="grade2">Grade 1</a>
+        <a class="dropdown-item" routerLink="grade2">Grade 2</a>
+      </div>
+      <a class="sidemenu" href="#">
+        About Us
+      </a>
+      <a class="sidemenu" href="#">
+        Subscribe
+      </a>
+      <a class="sidemenu" href="#">
+        Join
+      </a>     
     </div>
   </div>
-</div>
 </nav>
-
 <div class="content" role="main">
- 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3><img class="footer-img" alt="Maths Logo" src="assets/mathslogo.jpg"/>Play & Learn</h3>
+      <p>Giza Global Solutions LLP</p>
+      <p>3/293, State Bank Colony,</p>
+      <p>Ashokapuram,</p>
+      <p>Coimbatore, TamilNadu</p>
+      <p>India - 641022</p>
+      <p>+91 - 7708029907</p>
+      <p>+91 - 9894534589</p>
+    </div>    
+    <div class="footer-links">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>        
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h3>Privacy</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Payment terms</a></li>
+        <li><a href="#">Online Safety</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
