@@ -1,9 +1,60 @@
 <p class="header">{{title}}</p>
+<!-- <div *ngIf="!showfirstform else firstform"></div> -->
+<ng-template [ngIf]="showFirstForm">
 <form #userForm class="userForm">
     <p class="question">{{question}} </p>
-    <input autofocus class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer" name="answer" type="text"
+    <input *ngIf="!showWideInput && !showMediumWideInput" autofocus class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer" name="answer" type="text"
         (keyup.enter)="checkAnswer()">
+    <input *ngIf="showWideInput" autofocus class="userWideField" autocomplete="off" maxlength="9" [(ngModel)]="answer" name="answer" type="text" 
+    (keyup.enter)="checkAnswer()">
+    <input *ngIf="showMediumWideInput" autofocus class="userMediumWideField" autocomplete="off" maxlength="9" [(ngModel)]="answer" name="answer" type="text" 
+    (keyup.enter)="checkAnswer()">
 </form>
+</ng-template>
+<ng-template [ngIf]="showSecondForm">
+    <form #userForm class="userForm">        
+        <input   autofocus class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer" name="answer" type="text"
+            (keyup.enter)="checkAnswer()">    
+        <p class="question">{{question}} </p>        
+    </form>
+</ng-template>
+<ng-template [ngIf]="showThirdForm">    
+    <form #userForm class="userThirdForm"> 
+        <div class="sub-header-container">
+            <p class="sub-header">Use only these numbers : {{options[0]}} , {{options[1]}} , {{options[2]}} , {{options[3]}}</p>
+        </div>
+        
+        <div class="equation">
+        <input autofocus #firstBox class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer1" 
+        name="answer1" type="text" (keyup.enter)="checkAnswer()">   
+        <p *ngIf="operator==='??+'">+</p>
+        <p *ngIf="operator==='??-'">-</p>
+        <input class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer2" name="answer2" type="text"
+        (keyup.enter)="checkAnswer()"> 
+        <p>=</p>   
+        <p *ngIf="operator==='??+'" class="question">{{num3}} </p>   
+        <p *ngIf="operator==='??-'" class="question">{{num2}} </p>   
+    </div>     
+    </form>
+</ng-template>
+<ng-template [ngIf]="showFourthForm">
+    <form #userForm class="userForm">        
+        <p class="question">{{question}} </p>
+    <input #firstBox autofocus class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer1" name="answer1" type="text"
+        (keyup.enter)="checkAnswer()">
+       <p>remainder</p>  
+       <input autofocus class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer2" name="answer2" type="text"
+        (keyup.enter)="checkAnswer()">
+    </form>
+</ng-template>
+
+<ng-template [ngIf]="showFifthForm">
+    <form #userForm class="userForm" style="display:flex;flex-direction: column;">        
+        <p class="question">{{question}} </p><br>
+    <input #firstBox autofocus class="userField" autocomplete="off" maxlength="9" [(ngModel)]="answer" name="answer" type="text"
+        (keyup.enter)="checkAnswer()">       
+    </form>
+</ng-template>
 <div class="verify">
     <button class="checkAnswer" (click)="checkAnswer()">Answer</button>
 </div>

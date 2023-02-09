@@ -9,7 +9,7 @@
     margin-bottom: 10px;
 }
 
-.userForm{
+.userForm {
     background-color: #fde8ef;
     height: 500px;
     width: auto;
@@ -21,34 +21,7 @@
     color: #48a6db;
     font-size: 5em;
     line-height: 1em;
-    margin: 0 0.5rem;  
-}
-
-.userThirdForm {
-     background-color: #fde8ef;
-    height: 500px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2em;
-    flex-direction: column;
-    color: #48a6db;
-    font-size: 5em;
-    /* line-height: 1em; */
-    margin: 0 0.5rem; 
-
-    
-}
-
-.sub-header {
-    margin-bottom: 2em;
-    font-size: 0.5em;
-}
-
-.equation{
-    display: flex;
-    flex-direction: row;
+    margin: 0 0.5rem;
 }
 
 .level {
@@ -63,7 +36,6 @@
     border: 0.04em solid #48a6db;
     height: 120px;
     margin-left: 20px;
-    margin-right: 20px;
     font-size: 1em;
     width: 120px;
     text-align: center !important;
@@ -247,33 +219,6 @@ h2{
     border: 2px solid #4dd350;
     border-radius: 10px;
     line-height: 0.5rem;
-}
-
-.userWideField{
-    border: 0.04em solid #48a6db;
-    height: 120px;
-    margin-left: 20px;
-    font-size: 1em;
-    width: 500px;
-    text-align: center !important;
-    color: #48a6db;
-    padding: 0.05em 0;
-}
-
-.userMediumWideField{
-    border: 0.04em solid #48a6db;
-    height: 120px;
-    margin-left: 20px;
-    font-size: 1em;
-    width: 180px;
-    text-align: center !important;
-    color: #48a6db;
-    padding: 0.05em 0;
-}
-
-.sub-header{
-    display: flex;
-    flex-direction: column;
 }
 
 @media (max-width: 767px) {

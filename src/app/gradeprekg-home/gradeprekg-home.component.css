@@ -2,11 +2,10 @@
     margin-top:100px;
 }
 
-.grade2{
+.grade0{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    color: black;
+    align-items: center;    
     font-weight: 600;
     font-size: xx-large;
 }
@@ -24,7 +23,7 @@
     margin-right: 20px;
 }
 
-.grade2lists{
+.grade0lists{
     margin-top: 100px;
 }
 
@@ -58,18 +57,9 @@
     background-color: grey;
 }
 
-.minus{
-    background-color: var(--lightpink);
-}
-
 .add_category{
-    color: black;
+    color: blacck;
     border-bottom: 1px solid black;
-}
-
-.minus_category{
-    color: var(--lightpink);
-    border-bottom: 1px solid var(--lightpink);   
 }
 
 .number_1{

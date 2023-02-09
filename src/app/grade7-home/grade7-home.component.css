@@ -2,7 +2,7 @@
     margin-top:100px;
 }
 
-.grade2{
+.grade{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,17 +59,12 @@
 }
 
 .minus{
-    background-color: var(--lightpink);
+    background-color: grey;
 }
 
 .add_category{
     color: black;
     border-bottom: 1px solid black;
-}
-
-.minus_category{
-    color: var(--lightpink);
-    border-bottom: 1px solid var(--lightpink);   
 }
 
 .number_1{

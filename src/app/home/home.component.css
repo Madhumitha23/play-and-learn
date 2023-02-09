@@ -11,7 +11,8 @@
 }
 
 .grades-list {
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .skill-level {
@@ -29,33 +30,36 @@
 }
 
 .grade-0 {
-  border-color: var(--darkgreen);
-  color: var(--darkgreen);
+  /* border-color: var(--darkgreen);
+  color: var(--darkgreen); */
+  border-color: grey;
+  color: black;
 }
 
 .grade-0:hover {
-  background-color: var(--green);
-  color: white;
+  /* background-color: var(--green); */
+    background-color: lightgray;
+  color: black;
 }
 
 .grade-1 {
-  border-color: var(--darkred);
-  color: var(--darkred);
+  border-color: grey;
+  color: black;
 }
 
 .grade-1:hover {
-  background-color: var(--red);
-  color: white;
+  background-color: lightgray;
+  color: black;
 }
 
 .grade-2 {
-  border-color: var(--darkpink);
-  color: var(--darkpink);
+  border-color: grey;
+  color: black;
 }
 
 .grade-2:hover {
-  background-color: var(--lightpink);
-  color: white;
+  background-color: lightgray;
+  color: black;
 }
 
 div.key {
@@ -80,15 +84,19 @@ div.name {
 }
 
 .grade-0 div.key {
-  background-color: var(--darkgreen);
+  background-color: grey;
 }
 
 .grade-1 div.key {
-  background-color: var(--darkred);
+  background-color: grey;
 }
 
 .grade-2 div.key {
-  background-color: var(--darkpink);
+  background-color: grey;
+}
+
+div.row{
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1024px) {

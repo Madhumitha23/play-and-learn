@@ -2,11 +2,11 @@
     margin-top:100px;
 }
 
-.grade2{
+.grade1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: var(--darkpink);
+    color: black;
     font-weight: 600;
     font-size: xx-large;
 }
@@ -14,7 +14,7 @@
 .grade-number{
     width: 50px;
     height: 50px;
-    background-color: var(--darkpink);
+    background-color: grey;
     color: white;
     display: flex;
     justify-content: center;
@@ -55,16 +55,16 @@
 }
 
 .plus{
-    background-color: var(--lightgreen);
+    background-color: grey;
 }
 
 .minus{
-    background-color: var(--lightpink);
+    background-color: grey;
 }
 
 .add_category{
-    color: var(--lightgreen);
-    border-bottom: 1px solid var(--lightgreen);
+    color: black;
+    border-bottom: 1px solid black;
 }
 
 .minus_category{
