@@ -2,10 +2,9 @@
   margin-top: 60px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #f47cb3;
+  align-items: center;  
   line-height: 4rem;
-  color: white;
+  color: black;
   font-weight: 400;
   font-size: 2.3rem;
 }
@@ -110,7 +109,7 @@ div.row{
 @media only screen and (max-width: 761px) {
   .sub-header {
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .skill-level {

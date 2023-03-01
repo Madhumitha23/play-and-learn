@@ -23,6 +23,7 @@ import { Grade4HomeComponent } from './grade4-home/grade4-home.component';
 import { Grade5HomeComponent } from './grade5-home/grade5-home.component';
 import { Grade6HomeComponent } from './grade6-home/grade6-home.component';
 import { Grade7HomeComponent } from './grade7-home/grade7-home.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { Grade7HomeComponent } from './grade7-home/grade7-home.component';
     Grade4HomeComponent,
     Grade5HomeComponent,
     Grade6HomeComponent,
-    Grade7HomeComponent
+    Grade7HomeComponent,
+    FooterComponent
     
   ],
   imports: [

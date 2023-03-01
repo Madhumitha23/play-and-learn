@@ -1,57 +1,129 @@
 <!-- Toolbar -->
-<nav>
+<!-- <nav>
   <div class="toolbar" role="banner">
     <img width="40" alt="Maths Logo" src="assets/mathslogo.jpg" />
     <a class="navlink" routerLink="/">Good Children Games</a>
     <div class="spacer"></div>
-    <!-- <a class ="nav-link dropdown-toggle sidemenu" href="#" >Skills</a> -->
-    <div class="dropdown show">
-      <a class="dropdown-toggle sidemenu navlink" href="#" role="button" data-target="#dropdownMenuSkillsLink" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Skills
-      </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuSkills1Link">
-        <a class="dropdown-item" routerLink="gradeprekg">Pre-Kindergarten</a>
-        <a class="dropdown-item" routerLink="gradekg">Kindergarten</a>
-        <a class="dropdown-item" routerLink="grade1">Grade 1</a>
-        <a class="dropdown-item" routerLink="grade2">Grade 2</a>
-        <a class="dropdown-item" routerLink="grade3">Grade 3</a>
-        <a class="dropdown-item" routerLink="grade4">Grade 4</a>
-        <a class="dropdown-item" routerLink="grade5">Grade 5</a>
-        <a class="dropdown-item" routerLink="grade6">Grade 6</a>
-        <a class="dropdown-item" routerLink="grade7">Grade 7</a>
-      </div>
+    
+    
+      <div class="dropdown show">
+        <a class="dropdown-toggle sidemenu navlink" href="#" role="button" data-target="#dropdownMenuSkillsLink"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Skills
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuSkills1Link">
+          <a class="dropdown-item" routerLink="gradeprekg">Pre-Kindergarten</a>
+          <a class="dropdown-item" routerLink="gradekg">Kindergarten</a>
+          <a class="dropdown-item" routerLink="grade1">Grade 1</a>
+          <a class="dropdown-item" routerLink="grade2">Grade 2</a>
+          <a class="dropdown-item" routerLink="grade3">Grade 3</a>
+          <a class="dropdown-item" routerLink="grade4">Grade 4</a>
+          <a class="dropdown-item" routerLink="grade5">Grade 5</a>
+          <a class="dropdown-item" routerLink="grade6">Grade 6</a>
+          <a class="dropdown-item" routerLink="grade7">Grade 7</a>
+        </div>
       </div>
       <div class="dropdown show">
-      <a class="dropdown-toggle sidemenu navlink" href="#" role="button" data-target="#dropdownMenuGamesLink" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Games
-      </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuGamesLink">
-        <a class="dropdown-item" routerLink="gradekg">8 mo to 3 years</a>
-        <a class="dropdown-item" routerLink="grade1">Kindergarten</a>
-        <a class="dropdown-item" routerLink="grade2">Grade 1</a>
-        <a class="dropdown-item" routerLink="grade2">Grade 2</a>
+        <a class="dropdown-toggle sidemenu navlink" href="#" role="button" data-target="#dropdownMenuGamesLink"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Games
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuGamesLink">
+          <a class="dropdown-item" routerLink="gradekg">8 mo to 3 years</a>
+          <a class="dropdown-item" routerLink="grade1">Kindergarten</a>
+          <a class="dropdown-item" routerLink="grade2">Grade 1</a>
+          <a class="dropdown-item" routerLink="grade2">Grade 2</a>
+        </div>
       </div>
       <a class="sidemenu" routerLink="/about-us">
         About Us
       </a>
-      <!-- <a class="sidemenu" href="#">
-        Subscribe
-      </a>
-      <a class="sidemenu" href="#">
-        Join
-      </a>      -->
     </div>
-  </div>
+  
 </nav>
 <div class="content" role="main">
   <router-outlet></router-outlet>
+</div> -->
+
+
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container justify-content-center">    
+    <a class="navbar-brand" href="#" style="color: white;">
+      <img width="250px" alt="Maths Logo" src="assets/logo.png" />      
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+            Skills
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="gradeprekg">Pre-Kindergarten</a></li>
+            <li><a class="dropdown-item" routerLink="gradekg">Kindergarten</a></li>
+            <li><a class="dropdown-item" routerLink="grade1">Grade 1</a></li>
+            <li><a class="dropdown-item" routerLink="grade2">Grade 2</a></li>
+            <li><a class="dropdown-item" routerLink="grade3">Grade 3</a></li>
+            <li><a class="dropdown-item" routerLink="grade4">Grade 4</a></li>
+            <li><a class="dropdown-item" routerLink="grade5">Grade 5</a></li>
+            <li><a class="dropdown-item" routerLink="grade6">Grade 6</a></li>
+            <li><a class="dropdown-item" routerLink="grade7">Grade 7</a></li>
+            <li><a class="dropdown-item" routerLink="grade8">Grade 8</a></li>
+            <li><a class="dropdown-item" routerLink="grade9">Grade 9</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about-us" style="color: white;">About Us</a>
+        </li>       
+      </ul>       
+    </div>
+  </div>
+</nav> 
+
+<!-- <nav class="border-bottom" style="background-color: #9D6057;">
+  <div class="container ">
+    <header class="d-flex flex-wrap justify-content-center py-3 ">
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <img src="assets/logo.png"  alt="" width="250px">
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a routerLink="/" class="nav-link text-light" aria-current="page">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Skills
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="product-01.html">Grade 1</a></li>
+            <li><a class="dropdown-item" href="product-01.html">Grade 2</a></li>
+          </ul>
+        </li>      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Games
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="service-01.html">< 2 years</a></li>
+          </ul>
+        </li>                
+        
+        <li class="nav-item"><a href="index.html#contact" class="nav-link text-light">Sign in</a></li>      
+        <li class="nav-item"><a href="index.html#contact" class="nav-link text-light">Sign up</a></li>      
+      </ul>
+
+
+    </header>
+  </div>
+</nav> -->
+<div class="content" role="main">
+<router-outlet></router-outlet>
 </div>
-<footer>
+<!-- <footer>
   <div class="footer-container">
     <div class="footer-info">
-      <h3><img class="footer-img" alt="Maths Logo" src="assets/mathslogo.jpg"/>Good Children Games</h3>
+      <h3><img class="footer-img" alt="Maths Logo" src="assets/mathslogo.jpg" />Good Children Games</h3>
       <p>Giza Global Solutions LLP</p>
       <p>3/293, State Bank Colony,</p>
       <p>Ashokapuram,</p>
@@ -59,12 +131,12 @@
       <p>India - 641022</p>
       <p>+91 - 7708029907</p>
       <p>+91 - 9894534589</p>
-    </div>    
+    </div>
     <div class="footer-links">
       <h3>About Us</h3>
       <ul>
         <li><a routerLink="/about-us">About Us</a></li>
-        <li><a href="mailto:hello@goodchildren.com">Contact Us</a></li>        
+        <li><a href="mailto:hello@goodchildren.com">Contact Us</a></li>
       </ul>
     </div>
     <div class="footer-links">
@@ -77,4 +149,7 @@
       </ul>
     </div>
   </div>
-</footer>
+</footer> -->
+<app-footer></app-footer>
+
+
